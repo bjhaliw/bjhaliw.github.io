@@ -1,0 +1,8 @@
+https://climate.nasa.gov/vital-signs/global-temperature/
+Shows the average anomaly in global temperature. Been trending upwards since the 60s.
+
+https://www.nhc.noaa.gov/data/
+Hurricane database for Atlantic and for Pacific
+
+ftp://ftp.ncdc.noaa.gov/pub/data/swdi/stormevents/csvfiles/
+Database containing storm events from 1954 - 2020
