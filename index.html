@@ -14452,7 +14452,7 @@ a.anchor-link {
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Collecting-data-about-different-types-of-natural-disasters">Collecting data about different types of natural disasters<a class="anchor-link" href="#Collecting-data-about-different-types-of-natural-disasters">&#182;</a></h3><p>Next, we will collect data concerning natural disasters. The CSV files were downloaded from <a href="https://www1.ncdc.noaa.gov/pub/data/swdi/stormevents/csvfiles/">NOAA</a> and contain information about significant weather events, dating all the way back to 1954.</p>
-<p>I saved all of the files to a folder, and then used a for loop to go through each CSV file.I created a temporary dataframe to hold onto the current year's information, and then I added the temporary dataframe to the main dataframe to be utilized later.</p>
+<p>I saved all of the files to a folder, and then used a for loop to go through each CSV file. I created a temporary dataframe to hold onto the current year's information, and then I added the temporary dataframe to the main dataframe to be utilized later.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -17129,7 +17129,7 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Now that we have some numerical data to look at, it's finally time to put it all together to see if the rising global temperature has an effect on the amount of natural disasters that occur. To accomplish this, we will use linear regression in order to view the correlation.</p>
 <p>Our null hypothesis will be that the number of natural disasters is not influenced by the global temperature. We will attempt to reject this null hypothesis during each testing of our individual natural disasters.</p>
-<p>We will used Ordianary Least Squares (OLS) regression in order to determine if the natural disasters and the rising global temperature are in any way related. If you wish to learn more about OLS regression with Python, feel free to visit <a href="https://medium.com/@jyotiyadav99111/statistics-how-should-i-interpret-results-of-ols-3bde1ebeec01">this website.</a></p>
+<p>We will used Ordinary Least Squares (OLS) regression in order to determine if the natural disasters and the rising global temperature are in any way related. If you wish to learn more about OLS regression with Python, feel free to visit <a href="https://medium.com/@jyotiyadav99111/statistics-how-should-i-interpret-results-of-ols-3bde1ebeec01">this website.</a></p>
 
 </div>
 </div>
@@ -17433,7 +17433,7 @@ a.anchor-link {
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>From the OLS Regression Results, we see that our Prob (F-statistic) is 2.07e-11, which is an incredibly small number. This means with the data supplied, there is a correlation between the number of tornadoes and the increasing global temperature. However! There is some bias that is also contained within this data, especially within the first 10 - 20 years.</p>
-<p>As stated earlier in the Visualization phase, NOAA estimates that on average there are about 1000 tornadoes in the United States each year. However, for the first 10 - 20 years of the graph, we see that there are fewer than 1000, with the early-to-mid 1950s only showing a few hundred. Does this mean that there were only 223 tornadoes in the United States in 1950? Probably not. Something that has also evolved during this time has been weather radar and predictions models, which can accurately show if a tornado has been produced by a thunder storm. So, maybe, the tornadoes that have been reported within the last 20 years are much more accurate than the tornadoes that were reported within the first 20 years of the data. So, just as a test, lets go ahead and drop 1950 - 1970 and see if that has any effect on our P-Number.</p>
+<p>As stated earlier in the Visualization phase, NOAA estimates that on average there are about 1000 tornadoes in the United States each year. However, for the first 10 - 20 years of the graph, we see that there are fewer than 1000, with the early-to-mid 1950s only showing a few hundred. Does this mean that there were only 223 tornadoes in the United States in 1950? Probably not. Something that has also evolved during this time has been weather radar and predictions models, which can accurately show if a tornado has been produced by a thunderstorm. So, maybe, the tornadoes that have been reported within the last 20 years are much more accurate than the tornadoes that were reported within the first 20 years of the data. So, just as a test, we'll go ahead and drop 1950 - 1970 and see if that has any effect on our P Value.</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -17684,7 +17684,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Even with removing the first 20 years of data with the fewest amounts of tornadoes per year, our Prob (F-statistic) number still remains low, at 4.71e-05. Not as small as before, but still shows that there is a dependancy on the number of tornadoes and the global temperature.</p>
+<p>Even with removing the first 20 years of data with the fewest amounts of tornadoes per year, our Prob (F-statistic) number still remains low, at 4.71e-05. Not as small as before, but still shows that there is a dependency on the number of tornadoes and the global temperature.</p>
 <p>Overall, we can see the heatmap for the number and the intensity of tornadoes. For the purposes of the heatmap, I converted the Enhanced Fujita scale down to the Fujita scale.</p>
 
 </div>
@@ -17764,7 +17764,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>By examining the the different graphs and the resulting linear regression test, we can confidently reject our null hypothesis that the increase in tornadoes is not related to the increase in temperature. Everything within our tests points to show that although the intensity of the tornadoes has remained relatively consistent according to the heat map, there have been more lower grade tornadoes in the recent years.</p>
+<p>By examining the different graphs and the resulting linear regression test, we can confidently reject our null hypothesis that the increase in tornadoes is not related to the increase in temperature. Everything within our tests points to show that although the intensity of the tornadoes has remained relatively consistent according to the heat map, there have been more lower grade tornadoes in the recent years.</p>
 
 </div>
 </div>
@@ -18067,7 +18067,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>As with the number of wildfires, we see that our P-value is also relatively high, being a value of 0.869. This means that we also fail to reject our null hypothesis that the number of droughts would increase with the rising global temperature. As with the wildfire partial regression plots, our slopes further back this claim.</p>
+<p>As with the number of wildfires, we see that our P value is also relatively high, being a value of 0.869. This means that we also fail to reject our null hypothesis that the number of droughts would increase with the rising global temperature. As with the wildfire partial regression plots, our slopes further back this claim.</p>
 
 </div>
 </div>
@@ -18226,7 +18226,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Observing the P-value from the results, we see that we get a value of 2.81e-10. This is an incredibly small number, and would indicate that there is a dependancy between the number of cyclones and the temperature. Thus, we can reject our null hypothesis for the number of cyclones in the Atlantic Ocean with changing temperature. To learn how to read the above box plot, <a href="https://www.statisticshowto.com/probability-and-statistics/descriptive-statistics/box-plot/">click here.</a></p>
+<p>Observing the P value from the results, we see that we get a value of 2.81e-10. This is an incredibly small number, and would indicate that there is a dependency between the number of cyclones and the temperature. Thus, we can reject our null hypothesis for the number of cyclones in the Atlantic Ocean with changing temperature. To learn how to read the above box plot, <a href="https://www.statisticshowto.com/probability-and-statistics/descriptive-statistics/box-plot/">click here.</a></p>
 <p>Next. we will run the same test on the Pacific cyclone dataframe and analyze its results.</p>
 
 </div>
@@ -18379,7 +18379,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>By observing the P-value once more, we see that we get a value of 1.17e-07. Since this is a small number, we can also reject the null hypothesis for the number of cyclones in the Pacific Ocean with changing temperature as well. To make sense of what the violin plot is trying to show, please feel free to <a href="https://mode.com/blog/violin-plot-examples/">click here.</a></p>
+<p>By observing the P value once more, we see that we get a value of 1.17e-07. Since this is a small number, we can also reject the null hypothesis for the number of cyclones in the Pacific Ocean with changing temperature as well. To make sense of what the violin plot is trying to show, please feel free to <a href="https://mode.com/blog/violin-plot-examples/">click here.</a></p>
 
 </div>
 </div>
@@ -18393,8 +18393,8 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Through the use of the Data Science pipeline, we have been able to observe trends relating to the rising global temperature and the effect that it brings on natural disasters. From the data that we have observed and the mathematical models that we created during our analysis phase, we have come to the following conclusions:</p>
 <h5 id="Tornadoes-in-the-United-States">Tornadoes in the United States<a class="anchor-link" href="#Tornadoes-in-the-United-States">&#182;</a></h5><p>As stated throughout this project, there is some bias associated with the data that we collected from NOAA. Specifically, some tornadoes may have not been represented in the dataframe, or may have even been counted multiple times from different observers monitoring the storm. However, after correcting for these errors, we still came to the conclusion that the number of tornadoes has risen over the years as the Earth begins to heat up. Based on our model, this will continue to do so if the planet continues to warm.</p>
-<h5 id="Tropical-Cyclones">Tropical Cyclones<a class="anchor-link" href="#Tropical-Cyclones">&#182;</a></h5><p>We also see that there has been a rise in tropical cyclones which can be more accurately reported, since these events are often massive and can be seen from space and with weather radar. From the mathematical model that we created, the number of tropical cyclones in the Atalantic and Pacific Ocean has continued to rise, and will do so as the Earth continues to warm.</p>
-<h5 id="Droughts-and-Wildfires-in-the-United-States">Droughts and Wildfires in the United States<a class="anchor-link" href="#Droughts-and-Wildfires-in-the-United-States">&#182;</a></h5><p>According to the examined data and models, it does not appear that these two natural disasters are necessarily tied to global warming due to their high P-statistic. The two are closely related to each other based on their graphs, and thus should be placed on the back burner for now. Potential bias still exists, however, with the lack of data that was presented. The recorded data only dates back to 1996, which may or may not be enough time to witness these trends. They may also both be related to global warming, but will possibly increase with further warming of the planet.</p>
+<h5 id="Tropical-Cyclones">Tropical Cyclones<a class="anchor-link" href="#Tropical-Cyclones">&#182;</a></h5><p>We also see that there has been a rise in tropical cyclones which can be more accurately reported, since these events are often massive and can be seen from space and with weather radar. From the mathematical model that we created, the number of tropical cyclones in the Atlantic and Pacific Ocean has continued to rise, and will do so as the Earth continues to warm.</p>
+<h5 id="Droughts-and-Wildfires-in-the-United-States">Droughts and Wildfires in the United States<a class="anchor-link" href="#Droughts-and-Wildfires-in-the-United-States">&#182;</a></h5><p>According to the examined data and models, it does not appear that these two natural disasters are necessarily tied to global warming due to their high P value. The two are closely related to each other based on their graphs, and thus should be placed on the back burner for now. Potential bias still exists, however, with the lack of data that was presented. The recorded data only dates back to 1996, which may or may not be enough time to witness these trends. They may also both be related to global warming, but will possibly increase with further warming of the planet.</p>
 <h5 id="Final-Recommendations">Final Recommendations<a class="anchor-link" href="#Final-Recommendations">&#182;</a></h5><p>Further monitoring of the Earth's temperature and natural disasters is required. Although some of the data remains inconclusive, they may change if the temperature continues to steadily rise.</p>
 
 </div>
